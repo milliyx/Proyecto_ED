@@ -1,0 +1,43 @@
+
+/* 
+En este archivo CSS puedes realizar los ajustes de los contenidos para el archivo html del mismo nombre
+*/
+
+section {
+  background: no-repeat
+}
+#logos {
+  width: 500px;
+  height: 140px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+#logos img {
+  display: block;
+  width: 120px;
+  height: auto;
+  position: absolute;
+}
+#logos img#logounam {
+  left: 0;
+}
+#logos img#logofi {
+  right: 0;
+}
+#listaPortada {
+  display: block;
+  width: 945px;
+  list-style: none;
+  position: relative;
+  top: 140px;
+}
+#listaPortada li {
+  display: block;
+  width: 100%;
+  height: auto;
+  clear: both;
+  padding: 7.5px 0;
+  text-align: center;
+  font-size: 1.8em;
+}

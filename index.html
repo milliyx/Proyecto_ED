@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="Author" content="Jimenez Flores Jose Emanuel"/><!--Autor-->
+
+	<!-- Título de tu proyecto -->
+	<title>Estudio general del sistema</title>
+	
+	<meta name="Description" content="Estudio General del Sistema"/><!--Descripción del tutorial-->
+	<meta name="Keywords" content="Factores, Estudio, General, Sistema"/><!--Palabras clave-->
+	<meta name="robots" content="noindex, nofollow"/>
+	
+	<script src="media/js/jq.js" type="text/javascript"></script>
+	<script src="media/js/m.js" type="text/javascript"></script>
+	<script src="media/js/ui.js" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="media/css/ui.css" type="text/css" />
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#a1").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='portada.html'></iframe>");});
+			$("#a2").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='objetivo.html'></iframe>");});
+			$("#a3").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='introduccion.html'></iframe>");});
+			$("#a4").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='temario.html'></iframe>");});
+			$("#a5").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='desarrollo.html'></iframe>");});
+			$("#a6").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='video.html'></iframe>");});
+			$("#a7").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='ejemplos.html'></iframe>");});
+			$("#a8").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='cuestionario.html'></iframe>");});
+			$("#a9").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='software.html'></iframe>");});
+			$("#a10").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='conclusiones.html'></iframe>");});
+			$("#a11").click(function(){$("iframe#contents").replaceWith("<iframe id='contents' src='bibliografia.html'></iframe>");});
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<nav id="nav-left">
+			<!-- Inicio: Índice de temas del tutorial -->
+			<ul id="index">
+				<h2>Índice</h2>
+				<a id="a1" href="#"><li><span>Inicio</span></li></a>
+				<a id="a2" href="#"><li><span>Objetivo</span></li></a>			
+				<a id="a3"href="#"><li><span>Introducción</span></li></a>
+				<a id="a4"href="#"><li><span>Temario</span></li></a>
+				<a id="a5"href="#"><li><span>Desarrollo</span></li></a>
+				<a id="a6"href="#"><li><span>Video</span></li></a>
+				<a id="a7"href="#"><li><span>Ejemplos</span></li></a>
+				<a id="a8"href="#"><li><span>Cuestionario</span></li></a>
+				<a id="a9"href="#"><li><span>Software</span></li></a>
+				<a id="a10"href="#"><li><span>Conclusiones</span></li></a>
+				<a id="a11"href="#"><li><span>Bibliografia</span></li></a>
+			</ul>
+			<!-- Final: Indice de temas del tutorial -->
+			
+			<ul id="themes">
+				<h2>Temas</h2>
+				<li id="nlt-theme1"></li>
+				<li id="nlt-theme2"></li>
+				<li id="nlt-theme3"></li>
+				<li id="nlt-theme4"></li>
+				<li id="nlt-theme5"></li>
+				<li id="nlt-theme6"></li>
+				<li id="nlt-theme7"></li>
+				<li id="nlt-theme8"></li>
+				<li id="nlt-theme9"></li>
+			</ul>
+		</nav>
+		
+		<nav id="nav-right">
+		
+			<!-- Inicio: Archivos de audio -->
+			<ul id="audio">
+				<h2>Audio</h2>
+				<li>
+					<span>Conjuntos, relaciones y pruebas matemáticas</span>
+					<!-- Controladores diseñados-->
+					<audio class ="audio-player" name="" src="media/audio/h.mp3"></audio>
+					<audio class ="audio-player" name="" src="media/audio/h.ogg"></audio>
+					<a id = "play" href="#"><a id ="pause" href="#"></a><a id ="stop" href="#"></a>
+					<!-- Controladores default de audio (opcional) -->
+					<audio controls>
+						<source src= "media/audio/h.mp3" type="audio/mpeg">
+						<source src= "media/audio/h.ogg" type="audio/ogg">
+						<embed height="16" width= "50" src="media/audio/resumen.mp3">
+					</audio>
+				</li>
+				
+			</ul>
+			<!-- Final: Archivos de audio -->
+			
+			<!-- Inicio: Archivos descargables -->
+			<ul id="files">
+				<h2>Archivos</h2>
+				<li><a href="media/pdf/Conjuntos, relaciones y pruebas matemáticas – Conjuntos.pdf" target="_blank">Conjuntos, relaciones y pruebas matemáticas – Conjuntos</a></li>
+
+				<li><a href="media/pdf/Fundmentos de algebra_v2.pdf" target="_blank">Fundamentos de algebra_v2</a></li>
+
+				<li><a href="media/pdf/Respuestas cuestionario.pdf" target="_blank"> Respuestas Cuestionario</a></li>
+			</ul>
+			<!-- Final: Archivos descargables -->
+			
+			<!-- Inicio: Contacto -->
+			<ul id="contact">
+				<h2>Contacto</h2>
+				<li><span>Jiménez Flores José Emanuel</span></li>
+				<li><span><a href="mailto:jimenezfloresjoseemanuel@gmail.com">Mi Correo</a></span></li>
+			</ul>
+			<!-- Final: Contacto -->
+			
+		</nav>
+		
+		<div id="nav-left-trigger"></div>
+		<div id="nav-right-trigger"></div>
+	
+		<div id="theme" class="theme1">
+			<!-- Inicio: iFrame que contiene las secciones -->
+			<iframe id="contents" src="portada.html"></iframe>
+			<!-- Final: iFrame que contiene las secciones -->
+		</div>
+		
+		<!--Inicio: Pie de página-->
+		<footer id="footer">
+			<img id="logounam" src="media/css/img/logo_unam.png">
+			<img id="logofi" src="media/css/img/logo_fi.png">
+		</footer>
+		<!--Fin: Pie de página-->
+		
+	</div><!--Final: wrapper-->
+</body>
+
+</html>
