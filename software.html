@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="js_sf/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    </head>
+
+    <body id="body">
+        <div class="container">
+
+            <section class="section">
+                <div>
+                    <h1 class="title">Método de Quine–McCluskey</h1>
+                    
+                    <div class="column control">
+                        <label for="entradas-input">
+                            <h2 class="title"><small><small>Cantidad de variables (A,B,C,...)</small></small></h2>
+                            <p><small>*Mínimo de variables: 2&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*Máximo de variables: 7</small></p>
+                        </label>
+                        <div class="control is-half column is-paddingless is-loading">
+                            <input type="number" id="entradas-input" class="input" min="2" max="7" value="4" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="section">
+                <h2 class="title"><small><small>Selección de minitérminos</small></small><br></h2>
+                <p>Notas:</p>
+                <p><small>- Los minitérminos se encuentran en su forma binaria.</small></p>
+                <p><small>- Si desea agregar un minitérmino a la sumatoria presione el botón "Agregar".</small></p>
+                <p><small>- Para saber si un minitérmino se agregó a la sumatoria de manera correcta el botón "Agregar" se debe de encontrar de color verde.</small></p>
+                <p><small>- Si se selecciona de manera errónea un minitérmino se deberá de hacer la selección de minitérminos desde cero.</small></p><br>
+                <table id="input-tabla-verdad" class="table">
+                </table>
+                <button class="button is-rounded is-link simplificar-btn">Simplificar</button>
+            </section>
+
+            <hr>
+
+            <section class="section" id="detalles-section">
+                <h2 class="title"><small><small>Solución</small></small></h2>
+                <div id="mintermin-latex"></div>
+                <br>
+                <div id="mintermin-table"></div>
+            </section>
+
+            <hr>
+
+            <section class="section">
+                <h2 class="title"><small><small>Resultado</small></small></h2>
+                <div class="resultado-ly"><br></div>
+            </section>
+
+            <hr>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js_sf/tablaInteractiva.js"></script>
+        <script src="js_sf/tablaMinter.js"></script>
+        <script src="js_sf/tablaSimplificacion.js"></script>
+        <script src="js_sf/quine.js"></script>
+    </body>
+</html>
+
+<!--
+    Código del método de Quine-McCluskey se baso de:
+    https://mmedia1.fi-b.unam.mx/media/materials/t465/index.html
+    https://github.com/rodrigofrancisco/Quine-McCluskey      
+    https://github.com/Joel2B/Quine-McCluskey/blob/master/script.js
+    https://gist.github.com/ysangkok/5707171
+    http://booleanbot.com/
+-->
