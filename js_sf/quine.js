@@ -29,6 +29,10 @@ $(".simplificar-btn").click(async function(e) { //Boton de simplificar
     await asyncInitSimplificacion();
 });
 
+$(".new-expression").click('click', _ => {
+            location.reload();
+});
+
 //Se muestra el desarrollo
 async function asyncInitSimplificacion(){// Se hace de manera asincrona
     if(tablaDeVerdad.validate()){ //Se evalua si todos los elementos de la tabla de verdad tienen valor
@@ -74,10 +78,13 @@ function getMinterminos(){
         }
     }
     
-    let exp = "";
+    let exp = "\\sum_m(";
     for(let i = 0 ; i < minter.length ; ++i){
-        exp += bitsToExpresion(minter[i].binaryArray)+(i < minter.length-1?" + ":""); //Se genera una cadena para mostrar en pantalla con los minterminos en formato LATEX
+        let a = (minter[i].binaryArray).toString();
+        let b = a.replace(/(,)/gm, "");
+        exp += parseInt(b, 2) +(i < minter.length-1?",":""); //Se genera una cadena para mostrar en pantalla con los minterminos en formato LATEX
     }
+    exp += ")";
 
     exp = "}="+exp;
     for(let i = tablaDeVerdad.numBits-1 ; i >= 0  ; --i){   //Esta parte añade el nombre a la funcion canonica a la cadena
@@ -86,7 +93,7 @@ function getMinterminos(){
     exp = "f_{"+exp;
 
     $("#mintermin-latex").text("$"+exp+"$"); //Imprime la expresion
-    return minter; //Debuelve los terminos en su expresion canonica como suma de productos
+    return minter; //Devuelve los terminos en su expresion canonica como suma de productos
 }
 
 function removeEmptyRows(arr){

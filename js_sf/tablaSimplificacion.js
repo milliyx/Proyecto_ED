@@ -37,7 +37,7 @@ class tablaImplicantes{
         let html = '<table class="table is-bordered">'+
                 '<thead>'+
                     '<tr>'+
-                        '<th>Miniterminos</th>';
+                        '<th>Combinaciones</th>';
 
         for (let i = 0; i < minsCol.length; i++) {
             html+='<th>'+minsCol[i]+'</th>'
@@ -218,7 +218,7 @@ class simplificacionTabla{
         let html = '<table class="table is-bordered">'+
                 '<thead>'+
                     '<tr>'+
-                        '<th>Grupos</th>'+
+                        '<th>Combinaciones de grupos</th>'+
                         '<th>Representación binaria</th>'+
                     '</tr>'+
                 '</thead>';

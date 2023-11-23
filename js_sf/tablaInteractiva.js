@@ -99,11 +99,10 @@ class tablaDeVerdadView{
         for(let i = 0 ; i < this.numBits ; ++i){
             html += "<td>"+this.LETRAS[i]+"</td>";
         }
-
+        
         //Muestra a la funcion (f)
         html += "<td>f</td>";
-        html += "</tr></thead>";
-       
+
         //Contenedor de la primera fila
         $(this.containerName).html(html);
     }
@@ -118,7 +117,7 @@ class tablaDeVerdadView{
                 numBits: this.numBits
             });
             this.elements.push(newEl);
-            $(this.containerName).append(newEl.element);
+            $(this.containerName).append(i,newEl.element);
         }
         $($("#entradas-input").parent()).removeClass("is-loading");
     }

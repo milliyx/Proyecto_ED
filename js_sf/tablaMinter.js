@@ -107,19 +107,28 @@ class tablaMinterminos{
         let html = '<table class="table is-bordered">'+
                 '<thead>'+
                     '<tr>'+
-                        '<th>Cantidad de 1\'s</th>'+
+                        '<th>Minitérmino</th>'+
                         '<th>Representación binaria</th>'+
+                        '<th>Cantidad de 1\'s</th>'+
                     '</tr>'+
                 '</thead>';
 
         for (let i = 0; i < this.minterminosAgrup.length; i++) {
             if(this.minterminosAgrup[i].arr.length > 0){
-                html += "<tr><td>"+i+"</td>";
+                html += "<tr><td>";
+                for (let e = 0; e < this.minterminosAgrup[i].arr.length; e++) {
+                    html+= "<p>"+parseInt(this.minterminosAgrup[i].arr[e].arr.join(""), 2)+"</p>";
+                }
+                html += "</td>";
+
                 html += "<td>";
                 for (let e = 0; e < this.minterminosAgrup[i].arr.length; e++) {
                     html+= "<p>"+this.minterminosAgrup[i].arr[e].arr.join("")+"</p>";
                 }
                 html += "</td>";
+
+                html += "<td>"+ i +"</td>";
+
                 html += "</tr>";
             }
         }
