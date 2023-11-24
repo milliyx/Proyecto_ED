@@ -152,15 +152,17 @@
 
 
   <section>
-<h5>•Ley Conmutativa</h5>
-<p>Para la operación disyuntiva (OR) nos dice que el orden que ocupen las variables es indiferente. Lo
-            representamos con como: &or;</p>
-    <h5>•Ley Asociativa</h5>        <p>Para la operación conjuntiva (AND) el orden que ocupen las variables es indiferente, Lo representamos
-          como:
-          &and;</p>
-    <h5>•Ley Distributiva</h5>        <p>Para la operación disyuntiva (OR), en su resultado al tener un caso en que intervienen más de dos
-          variables,
-          va a ser independiente del modo en que se agrupen las variables.</p>
+    <h5>•Ley Conmutativa</h5>
+    <p>Para la operación disyuntiva (OR) nos dice que el orden que ocupen las variables es indiferente. Lo
+      representamos con como: &or;</p>
+    <h5>•Ley Asociativa</h5>
+    <p>Para la operación conjuntiva (AND) el orden que ocupen las variables es indiferente, Lo representamos
+      como:
+      &and;</p>
+    <h5>•Ley Distributiva</h5>
+    <p>Para la operación disyuntiva (OR), en su resultado al tener un caso en que intervienen más de dos
+      variables,
+      va a ser independiente del modo en que se agrupen las variables.</p>
   </section>
 
   <h1>Métodos de minimización</h1>
@@ -183,46 +185,90 @@
       </p>
     </div>
   </h5>
-      <section>
-        <h5>•Método algebraico</h5>
-        <h5>•Mapas de Karnaugh.</h5>
-        <h5>•Método de Quine-McCluskey</h5>
-      </section>
-<section>
-<h2>Método Àlgebraico</h2>
-     <h5>
-        <div align="justify">
-          <p>Para este método es a primera instancia, fácil de interpretar por su semejanza con los sistemas algebraicos a los que estamos acostumbrados. Sin embargo, aquí iremos aplicando los postulados (o propiedades) del algebra de Boole. </p>
-        <p>Bueno, las propiedades que se estuvieron manejando durante el curso para la aplicación de este método se encuentran en la tabla VI que adjuntamos a continuación, en donde estamos manejando las representaciones de la conjunción, disyunción y negación en su forma ( · , + y ‘, respectivamente).</p>
-      	<img id="t1" src="images/t1.png" alt="Descripción de la imagen">  
+  <section>
+    <h5>•Método algebraico</h5>
+    <h5>•Mapas de Karnaugh.</h5>
+    <h5>•Método de Quine-McCluskey</h5>
+  </section>
+  <section>
+    <h2>Método Àlgebraico</h2>
+    <h5>
+      <div align="justify">
+        <p>Para este método es a primera instancia, fácil de interpretar por su semejanza con los sistemas algebraicos a
+          los que estamos acostumbrados. Sin embargo, aquí iremos aplicando los postulados (o propiedades) del algebra
+          de Boole. </p>
+        <p>Bueno, las propiedades que se estuvieron manejando durante el curso para la aplicación de este método se
+          encuentran en la tabla VI que adjuntamos a continuación, en donde estamos manejando las representaciones de la
+          conjunción, disyunción y negación en su forma ( · , + y ‘, respectivamente).</p>
+        <img id="t1" src="images/t1.png" alt="Descripción de la imagen">
       </div>
-      </h5>
-</section>
- 
-<section>
-  <h2>Mapas de Karnaugh</h2>
-  <h5><div align = "justify">
-    <p>Este método surge de tratar de agrupar a los términos de interés sin aplicar de forma directa el desarrollo algebraico que ofrece el método anterior. Y esto se constituye de desarrollar de forma gráfica la tabla de verdad de una función lógica. </p>
-      	<img id="t2" src="images/t2.png" alt="Descripción de la imagen">  
-<p>Como podemos ver, se pueden tratar funciones de dos hasta cinco variables, para este método tabular cuyos términos canónicos adyacentes pueden ser agrupados para hacer de forma más sencilla la agrupación de los elementos.</p>
-<p>Su algoritmo, en pocas palabras, consiste en:</p> 
-      <section>
-        <h5>1. Se escribe un 1 en los cuadros que tiene un número de los que forman la sumatoria de la función.</h5>
-<h5>2. Se forman los grupos de minitérminos que se consideran vecinos (tienen un lado en común).</h5>
-<h5>3. Se identifican a las variables para los conjuntos hechos por los grupos que hicimos de los minitérminos, estos serán los conjuntos.</h5>    
-<h5>4. Hacemos la sumatoria de los productos *Habrá que comprobar el resultado con el método gráfico de formar líneas dictadas por las variables que forman a los productos de los grupos*.</h5>
-</section>
+    </h5>
+  </section>
 
-<section>
-  <h2></h2>
-  <h5><div align = "justify">
+  <section>
+    <h2>Mapas de Karnaugh</h2>
+    <h5>
+      <div align="justify">
+        <p>Este método surge de tratar de agrupar a los términos de interés sin aplicar de forma directa el desarrollo
+          algebraico que ofrece el método anterior. Y esto se constituye de desarrollar de forma gráfica la tabla de
+          verdad de una función lógica. </p>
+        <img id="t2" src="images/t2.png" alt="Descripción de la imagen">
+        <p>Como podemos ver, se pueden tratar funciones de dos hasta cinco variables, para este método tabular cuyos
+          términos canónicos adyacentes pueden ser agrupados para hacer de forma más sencilla la agrupación de los
+          elementos.</p>
+        <p>Su algoritmo, en pocas palabras, consiste en:</p>
+        <p>1. Se escribe un 1 en los cuadros que tiene un número de los que forman la sumatoria de la función.</p>
+        <p>2. Se forman los grupos de minitérminos que se consideran vecinos (tienen un lado en común).</p>
+        <p>3. Se identifican a las variables para los conjuntos hechos por los grupos que hicimos de los
+          minitérminos, estos serán los conjuntos.</p>
+        <p>4. Hacemos la sumatoria de los productos *Habrá que comprobar el resultado con el método gráfico de formar
+          líneas dictadas por las variables que forman a los productos de los grupos*.</p>
+  </section>
+  <section>
+    <h2>Método de minimización de Quine-McCluskey</h2>
+    <h5>
+      <div align="justify">
+        <p>Este método fue presentado originalmente por Willard Van Orman Quine y Edward J. McCluskey, denominado en su
+          momento como método (Q-M), no limitado al número de variables de una función (como si lo pudiera llegar a ser
+          para los mapas de Karnaugh), posibilita la implementación algorítmica y tiene la ventaja de realizar
+          simplificaciones simultáneas para varias funciones que comparten un mismo conjunto de variables de entrada.
+          Entrega una solución minimizada global de la implementación, en vez de una solución mínima por función (los
+          llamados mínimos locales). </p>
+        <p>A considerar que la función booleana como:</p>
+        <img id="t2" src="images/qm_1.png" alt="Descripción de la imagen">
+        <p>Se nos puede presentar una función booleana de:</p>
+        <p>- 2 variables: f\left(a,b\right)</p>
+        <p>- 3 variables: f\left(a,b,c\right) </p>
+        <p>- 4 variables: f\left(a,b,c,d\right)</p>
+        <p> O hasta 7 variables: f\left(a,b,c,d,e,f,g\right)</p>
+        <p>Y eso nos va a indicar que las representaciones binarias de los minitérminos podrían llegar a representarse
+          dependiendo de la cantidad de variables presentes en la función boolena:</p>
+        <img id="t2" src="images/qm_2.png" alt="Descripción de la imagen">
+        <p>Y así sucesivamente.</p>
+        <p>Entonces, para su desarrollo se realiza por medio de la elaboración de cinco tablas en las que se van a ir
+          agregando datos específicos, así que, para minimizar una función booleana se podría resumir en:</p>
+          <p>1. Elaborar una tabla 1 en donde vamos a ir almacenando a los minitérminos de la función en la primera
+            columna, su representación binaria en la tercera columna, y por último la segunda columna la cantidad de 1’s
+            en su representación binaria (0, 1, 2, 3, …, n).</p>
+          <img id="t2" src="images/qm_3.png" alt="Descripción de la imagen">
+          <p><b>
+              *NOTA: la cuarta columna sirve de apoyo para agregar comentarios al momento de ejercer algún
+                movimiento importante en el desarrollo y es necesario volver a checar qué se hizo. Aunque, nosotros lo
+                hemos trabajado como una columna para escribir una marca de tipo *, que vamos a explicar en un momento.
+            </b> </p>
+          <p>2.	Generamos una tabla 2, en esta vamos a reordenar a los minitérminos y su representación de acuerdo con la cantidad de 1’s que tienen en su representación. </p>
+          <img id="t2" src="images/qm_4.png" alt="Descripción de la imagen">
+<p>Y vamos marcando con un * en la tabla 1, a los minitérminos que ya hemos agregado a la tabla 2.</p>
+          
+<p>•Método de Quine-McCluskey</p>
+      </div>
+    </h5>
+  </section>
 
-  </div></h5>
-</section>
+  </div>
+  </h5>
 
-</div></h5>
-
-</section>
+  </section>
 
 </body>
 
